@@ -3,7 +3,7 @@
 ############################# Input ############################################
 input:
   # In seconds, defines how often to read server statistics
-  period: 10
+  period: 30
 
   # Define the docker socket path
   # By default, this will get the unix:///var/run/docker.sock
@@ -61,7 +61,7 @@ output:
     # The number of seconds to wait for new events between two bulk API index requests.
     # If `bulk_max_size` is reached before this interval expires, addition bulk index
     # requests are made.
-    flush_interval: 10
+    flush_interval: 30
 
     # Boolean that sets if the topology is kept in Elasticsearch. The default is
     # false. This option makes sense only for Packetbeat.
